@@ -4,20 +4,20 @@ for i = 1:length(support_y1)
         support_y1(i) = -5;
     elseif support_y1(i) > 10
         support_y1(i) = 10;
-    else 
+    else
         support_y1(i) = support_y1(i);
-    end 
-end 
+    end
+end
 
 for i = 1:length(support_y2)
     if support_y2(i) < -5
         support_y2(i) = -5;
     elseif support_y2(i) > 10
         support_y2(i) = 10;
-    else 
+    else
         support_y2(i) = support_y2(i);
-    end 
-end 
+    end
+end
 % Define the locations of the cities.
 support_x = 0:2:40;
 support_y = [0, support_y1, 3, support_y2, 0];

@@ -1,5 +1,5 @@
 function [dist ] = max_distance(support_y1, support_y2)
-support_x = [ 0 1.25 2.5 3.75 5 6.25 7.5 8.75 10]; 
+support_x = [ 0 1.25 2.5 3.75 5 6.25 7.5 8.75 10];
 % Set the car and motor parameters
 support_y = [0,support_y1,5,support_y2,0];
 
@@ -35,7 +35,7 @@ w0 = [x0, vx0, y0, vy0];
 threshold = 10;
 ev = @(t, y) events_func(t, y, threshold);
 options = odeset('AbsTol', 1e-10, 'RelTol', 1e-8, 'events', ev);
-[t, w] = ode45(f, time_span, w0, options); 
+[t, w] = ode45(f, time_span, w0, options);
 
 
 
